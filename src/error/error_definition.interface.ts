@@ -3,5 +3,3 @@ export interface HttpError extends Error {
   details?: any | null
   errors?: any
 }
-
-// FIXME: fix and rewrite error handling

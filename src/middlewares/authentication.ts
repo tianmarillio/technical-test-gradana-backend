@@ -26,7 +26,7 @@ export async function authentication(
 }
 
 function extractToken(authHeader = '') {
-  const [bearer, token] = authHeader?.split(' ')
+  const [bearer, token] = authHeader.split(' ')
 
   return token
 }

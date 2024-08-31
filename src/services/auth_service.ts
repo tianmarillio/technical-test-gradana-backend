@@ -21,7 +21,7 @@ export class AuthService {
       ],
     }).exec()
 
-    if (!!foundUsers.length) {
+    if (foundUsers.length) {
       throw GeneralError.badRequest('Email or Phone Number already used')
     }
 
